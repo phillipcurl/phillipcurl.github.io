@@ -195,7 +195,7 @@ a:-webkit-any-link {
 }
 
 .sub-header {
-  position: fixed;
+  position: absolute;
   top: 55%;
   width: 100%;
   text-align: center;

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700');
+@import url('//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700');
 body {
   background-color: #000;
   background-image: url('bg.png');
@@ -26,7 +26,6 @@ h2 {
     -webkit-margin-after: 0px;
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
-    font-weight: normal;
 }
 
 a:-webkit-any-link {
@@ -55,7 +54,7 @@ a:-webkit-any-link {
 
 .hover-block {
   float: left;
-  height: 80px;
+  height: 100px;
   display: block;
   margin-right: 4%;
   -webkit-transform: scale(1.5);
@@ -197,7 +196,7 @@ a:-webkit-any-link {
 .sub-header {
   position: absolute;
   top: 55%;
-  width: 99%;
+  width: 97%;
   text-align: center;
 }
 
@@ -209,8 +208,9 @@ a:-webkit-any-link {
 footer{
   position: absolute;
   bottom: 0;
+  right: 0;
   width: 100%
-  padding: 25px;
+  padding: 50px;
 }
   footer .nav-links {
     width: 50%;

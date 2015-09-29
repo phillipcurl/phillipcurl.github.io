@@ -1,7 +1,7 @@
-@import url('//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700');
 body {
   background-color: #000;
-  background-image: url('bg.png');
+  background-image: image('../img/bg.png');
   background-repeat: repeat;
   /*background-position: 50% 20%;*/
   background-size: cover;
@@ -196,7 +196,7 @@ a:-webkit-any-link {
 .sub-header {
   position: absolute;
   top: 55%;
-  width: 97%;
+  width: 98%;
   text-align: center;
 }
 
@@ -208,16 +208,25 @@ a:-webkit-any-link {
 footer{
   position: absolute;
   bottom: 0;
-  right: 0;
-  width: 100%
-  padding: 50px;
+  width: 100%;
+  padding: 30px;
 }
   footer .nav-links {
+    display: inline-block;
     width: 50%;
+    float: left;
   }
+    footer .nav-links .nav {
+      float: left;
+    }
   footer .social {
-    width: 100%;
+    display: inline-block;
+    width: 50%;
+    float: right;
   }
+    footer .social .social-list {
+      float: right;
+    }
     footer ul {
       list-style: none;
       -webkit-margin-before: 0px;
@@ -237,33 +246,3 @@ footer{
           footer ul li a:hover {
             color: #26ff6c;
           }
-
-#superlink {
-  background: #ff3535;
-  /* Old browsers */
-  background: -moz-linear-gradient(left, #ff3535 0%, #ffb22d 19%, #f7df00 37%, #26ff6c 56%, #268bff 76%, #8b3cff 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #ff3535), color-stop(19%, #ffb22d), color-stop(37%, #f7df00), color-stop(56%, #26ff6c), color-stop(76%, #268bff), color-stop(100%, #8b3cff));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(left, #ff3535 0%, #ffb22d 19%, #f7df00 37%, #26ff6c 56%, #268bff 76%, #8b3cff 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(left, #ff3535 0%, #ffb22d 19%, #f7df00 37%, #26ff6c 56%, #268bff 76%, #8b3cff 100%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(left, #ff3535 0%, #ffb22d 19%, #f7df00 37%, #26ff6c 56%, #268bff 76%, #8b3cff 100%);
-  /* IE10+ */
-  background: linear-gradient(to right, #ff3535 0%, #ffb22d 19%, #f7df00 37%, #26ff6c 56%, #268bff 76%, #8b3cff 100%);
-  /* W3C */
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ff3535', endColorstr='#8b3cff', GradientType=1);
-  /* IE6-9 */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  position: fixed;
-  bottom: 0;
-  outline: none;
-  text-decoration: none !important;
-  outline: none !important;
-  right: 0;
-  text-transform: uppercase;
-  font-size: 12px;
-  margin: 15px;
-}

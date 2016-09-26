@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700');
+
+html, body {
+  overflow-y: hidden;
+}
+
 body {
   background-color: #000;
   background-image: url('bg.png');
@@ -186,10 +191,6 @@ footer .nav-links .nav {
 footer .social {
   display: inline-block;
   width: 50%;
-  float: right;
-}
-footer .social .social-list {
-  float: right;
 }
 footer ul {
   list-style: none;
